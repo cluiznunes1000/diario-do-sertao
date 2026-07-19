@@ -1,0 +1,92 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const cidadesJson = await import("../data/cidades.json");
+const cidades = cidadesJson.default.cidades;
+
+export async function getStaticPaths() {
+  const cidadesJson = await import("../data/cidades.json");
+  const todasCidades = cidadesJson.default.cidades;
+  return todasCidades.map((cidade) => ({
+    params: { id: cidade.id.toString() },
+    props: { cidade },
+  }));
+}
+
+interface Props {
+  cidade: any;
+}
+
+const { id } = Astro.params;
+const { cidade } = Astro.props as Props;
+
+if (!cidade) {
+  return Astro.redirect("/");
+}
+---
+
+<BaseLayout title={`${cidade.nome} - Diário do Sertão`}>
+  <div class="cidade-header">
+    <h2>{cidade.nome}</h2>
+    <p><strong>Região:</strong> {cidade.regiao}</p>
+    <p><strong>Coordenadas:</strong> {cidade.lat.toFixed(4)}, {cidade.lng.toFixed(4)}</p>
+  </div>
+
+  <div class="noticias">
+    <h3>Notícias de {cidade.nome}</h3>
+    <p>Em breve: sistema de notícias será integrado aqui.</p>
+  </div>
+
+  <a href="/" class="voltar">← Voltar</a>
+</BaseLayout>
+
+<style>
+  .cidade-header {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border-left: 5px solid #D2691E;
+    border: 1px solid #333;
+  }
+
+  .cidade-header h2 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #D2691E;
+  }
+
+  .cidade-header p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+
+  .noticias {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+  }
+
+  .noticias h3 {
+    margin-top: 0;
+    color: #D2691E;
+  }
+
+  .voltar {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #8B4513;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+    font-weight: 500;
+  }
+
+  .voltar:hover {
+    background-color: #D2691E;
+  }
+</style>
