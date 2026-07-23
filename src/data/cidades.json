@@ -1,1 +1,716 @@
-{"cidades": [{"id": 1, "nome": "Montes Claros", "lat": -16.7289, "lng": -43.8493, "regiao": "Hub Regional"}, {"id": 2, "nome": "Januaria", "lat": -15.4796, "lng": -44.3662, "regiao": "Medio Sao Francisco"}, {"id": 3, "nome": "Salinas", "lat": -16.1658, "lng": -42.2842, "regiao": "Vale do Jequitinhonha"}, {"id": 4, "nome": "Pirapora", "lat": -17.3504, "lng": -44.9436, "regiao": "Medio Sao Francisco"}, {"id": 5, "nome": "Janauba", "lat": -15.8008, "lng": -43.3106, "regiao": "Norte Central"}, {"id": 6, "nome": "Bocaiuva", "lat": -17.1019, "lng": -43.8153, "regiao": "Norte Central"}, {"id": 7, "nome": "Grao Mogol", "lat": -16.3625, "lng": -42.8803, "regiao": "Vale do Jequitinhonha"}, {"id": 8, "nome": "Fruta de Leite", "lat": -16.0842, "lng": -43.1564, "regiao": "Norte Central"}, {"id": 9, "nome": "Sao Francisco", "lat": -15.8094, "lng": -44.2794, "regiao": "Medio Sao Francisco"}, {"id": 10, "nome": "Engenheiro Navarro", "lat": -16.6969, "lng": -43.0803, "regiao": "Norte Central"}, {"id": 11, "nome": "Luislandia", "lat": -15.5347, "lng": -44.2556, "regiao": "Medio Sao Francisco"}, {"id": 12, "nome": "Espinosa", "lat": -15.0553, "lng": -43.8328, "regiao": "Medio Sao Francisco"}, {"id": 13, "nome": "Ibiai", "lat": -17.3569, "lng": -44.6447, "regiao": "Medio Sao Francisco"}, {"id": 14, "nome": "Itacambira", "lat": -16.3092, "lng": -42.6117, "regiao": "Vale do Jequitinhonha"}, {"id": 15, "nome": "Aracuai", "lat": -16.8554, "lng": -42.0676, "regiao": "Vale do Jequitinhonha"}, {"id": 16, "nome": "Taiobeiras", "lat": -16.2042, "lng": -42.4653, "regiao": "Vale do Jequitinhonha"}, {"id": 17, "nome": "Comercinho", "lat": -16.4622, "lng": -42.8181, "regiao": "Vale do Jequitinhonha"}, {"id": 18, "nome": "Turmalina", "lat": -16.6658, "lng": -42.7172, "regiao": "Vale do Jequitinhonha"}, {"id": 19, "nome": "Capelinha", "lat": -16.7833, "lng": -42.4667, "regiao": "Vale do Jequitinhonha"}, {"id": 20, "nome": "Carbonita", "lat": -17.0167, "lng": -42.2667, "regiao": "Vale do Jequitinhonha"}, {"id": 21, "nome": "Itinga", "lat": -16.3, "lng": -42.2667, "regiao": "Vale do Jequitinhonha"}, {"id": 22, "nome": "Felisburgo", "lat": -16.95, "lng": -42.55, "regiao": "Vale do Jequitinhonha"}, {"id": 23, "nome": "Jequitinhonha", "lat": -16.2642, "lng": -41.9742, "regiao": "Vale do Jequitinhonha"}, {"id": 24, "nome": "Leme do Prado", "lat": -16.8242, "lng": -41.9783, "regiao": "Vale do Jequitinhonha"}, {"id": 25, "nome": "Minas Novas", "lat": -16.7083, "lng": -42.3333, "regiao": "Vale do Jequitinhonha"}, {"id": 26, "nome": "Veredinha", "lat": -16.8833, "lng": -42.5167, "regiao": "Vale do Jequitinhonha"}, {"id": 27, "nome": "Chapada do Norte", "lat": -16.3333, "lng": -42.8833, "regiao": "Vale do Jequitinhonha"}, {"id": 28, "nome": "Coluna", "lat": -16.5667, "lng": -42.9167, "regiao": "Vale do Jequitinhonha"}, {"id": 29, "nome": "Diamantina", "lat": -17.9444, "lng": -43.6058, "regiao": "Serras do Espinha\u00e7o"}, {"id": 30, "nome": "Datas", "lat": -17.8667, "lng": -43.5, "regiao": "Serras do Espinha\u00e7o"}, {"id": 31, "nome": "Conselheiro Mata", "lat": -17.7833, "lng": -43.3333, "regiao": "Serras do Espinha\u00e7o"}, {"id": 32, "nome": "Gouveia", "lat": -18.4694, "lng": -43.7961, "regiao": "Serras do Espinha\u00e7o"}, {"id": 33, "nome": "Serro", "lat": -18.6086, "lng": -43.3903, "regiao": "Serras do Espinha\u00e7o"}, {"id": 34, "nome": "Barao de Cocais", "lat": -19.6417, "lng": -43.4764, "regiao": "Central Mineiro"}, {"id": 35, "nome": "Buenopolis", "lat": -17.9372, "lng": -44.0561, "regiao": "Medio Sao Francisco"}, {"id": 36, "nome": "Cordislandia", "lat": -18.9833, "lng": -43.8333, "regiao": "Central Mineiro"}, {"id": 37, "nome": "Inima", "lat": -16.2783, "lng": -43.6717, "regiao": "Norte Central"}, {"id": 38, "nome": "Juramento", "lat": -16.2733, "lng": -43.5906, "regiao": "Norte Central"}, {"id": 39, "nome": "Mirabai", "lat": -16.3103, "lng": -43.6197, "regiao": "Norte Central"}, {"id": 40, "nome": "Ninheira", "lat": -16.0831, "lng": -43.3914, "regiao": "Norte Central"}, {"id": 41, "nome": "Pai Pedro", "lat": -16.5275, "lng": -43.4275, "regiao": "Norte Central"}, {"id": 42, "nome": "Patis", "lat": -16.5397, "lng": -43.5964, "regiao": "Norte Central"}, {"id": 43, "nome": "Porteirinha", "lat": -16.0328, "lng": -43.6733, "regiao": "Norte Central"}, {"id": 44, "nome": "Riacho dos Machados", "lat": -16.7631, "lng": -43.3186, "regiao": "Norte Central"}, {"id": 45, "nome": "Santa Cruz de Salinas", "lat": -16.4106, "lng": -42.4361, "regiao": "Vale do Jequitinhonha"}, {"id": 46, "nome": "Santo Antonio do Retiro", "lat": -16.8131, "lng": -43.4153, "regiao": "Norte Central"}, {"id": 47, "nome": "Sao Joao da Lagoa", "lat": -17.0981, "lng": -44.0422, "regiao": "Medio Sao Francisco"}, {"id": 48, "nome": "Varzea da Palma", "lat": -17.2922, "lng": -44.7406, "regiao": "Medio Sao Francisco"}, {"id": 49, "nome": "Verdelandia", "lat": -15.6931, "lng": -44.3892, "regiao": "Medio Sao Francisco"}, {"id": 50, "nome": "Unai", "lat": -16.3747, "lng": -46.9144, "regiao": "Noroeste Mineiro"}, {"id": 51, "nome": "Brasileandia de Minas", "lat": -15.7642, "lng": -46.3106, "regiao": "Noroeste Mineiro"}, {"id": 52, "nome": "Paracatu", "lat": -17.2186, "lng": -46.8692, "regiao": "Noroeste Mineiro"}, {"id": 53, "nome": "Guarda-Mor", "lat": -17.3019, "lng": -46.6369, "regiao": "Noroeste Mineiro"}, {"id": 54, "nome": "Joao Pinheiro", "lat": -17.7431, "lng": -46.165, "regiao": "Noroeste Mineiro"}, {"id": 55, "nome": "Abaet\u00e9", "lat": -18.7683, "lng": -45.4539, "regiao": "Centro-Oeste Mineiro"}, {"id": 56, "nome": "Morada Nova de Minas", "lat": -18.8397, "lng": -45.1325, "regiao": "Centro-Oeste Mineiro"}, {"id": 57, "nome": "Quarai", "lat": -17.1681, "lng": -45.4758, "regiao": "Centro-Oeste Mineiro"}, {"id": 58, "nome": "Bom Despacho", "lat": -18.9533, "lng": -45.3711, "regiao": "Centro-Oeste Mineiro"}, {"id": 59, "nome": "Ara\u00fajos", "lat": -19.1694, "lng": -45.5906, "regiao": "Centro-Oeste Mineiro"}, {"id": 60, "nome": "Leandro Ferreira", "lat": -19.0969, "lng": -45.8414, "regiao": "Centro-Oeste Mineiro"}, {"id": 61, "nome": "Cedro do Abaet\u00e9", "lat": -19.4467, "lng": -45.4858, "regiao": "Centro-Oeste Mineiro"}, {"id": 62, "nome": "Mamonas", "lat": -19.1736, "lng": -45.7697, "regiao": "Centro-Oeste Mineiro"}, {"id": 63, "nome": "Perdigao", "lat": -19.1381, "lng": -45.4572, "regiao": "Centro-Oeste Mineiro"}, {"id": 64, "nome": "Caetanopolis", "lat": -19.6358, "lng": -43.7142, "regiao": "Central Mineiro"}, {"id": 65, "nome": "Pombal", "lat": -19.0906, "lng": -44.6253, "regiao": "Centro-Oeste Mineiro"}, {"id": 66, "nome": "Papagaios", "lat": -19.2297, "lng": -45.0889, "regiao": "Centro-Oeste Mineiro"}, {"id": 67, "nome": "Moema", "lat": -19.1019, "lng": -44.8717, "regiao": "Centro-Oeste Mineiro"}, {"id": 68, "nome": "Pitangui", "lat": -19.7206, "lng": -45.9231, "regiao": "Centro-Oeste Mineiro"}, {"id": 69, "nome": "Jequitib\u00e1", "lat": -19.6847, "lng": -44.9269, "regiao": "Centro-Oeste Mineiro"}, {"id": 70, "nome": "Santo Antonio do Amparo", "lat": -20.8919, "lng": -45.6686, "regiao": "Centro-Oeste Mineiro"}, {"id": 71, "nome": "Pequi", "lat": -19.6892, "lng": -45.7186, "regiao": "Centro-Oeste Mineiro"}, {"id": 72, "nome": "Doresopolis", "lat": -19.3606, "lng": -45.6986, "regiao": "Centro-Oeste Mineiro"}, {"id": 73, "nome": "Formiga", "lat": -20.4767, "lng": -45.4589, "regiao": "Centro-Oeste Mineiro"}, {"id": 74, "nome": "Iguatama", "lat": -20.3381, "lng": -45.5989, "regiao": "Centro-Oeste Mineiro"}, {"id": 75, "nome": "Araxa", "lat": -19.5845, "lng": -46.9373, "regiao": "Triangulo Mineiro"}, {"id": 76, "nome": "Pedra Azul", "lat": -15.7667, "lng": -41.3333, "regiao": "Vale do Jequitinhonha"}, {"id": 77, "nome": "Te\u00f3filo Otoni", "lat": -17.8667, "lng": -41.5, "regiao": "Vale do Jequitinhonha"}, {"id": 78, "nome": "Malacacheta", "lat": -17.4, "lng": -41.8333, "regiao": "Vale do Jequitinhonha"}, {"id": 79, "nome": "Ataleia", "lat": -17.2542, "lng": -41.5361, "regiao": "Vale do Jequitinhonha"}, {"id": 80, "nome": "Campanario", "lat": -17.6833, "lng": -41.3333, "regiao": "Vale do Jequitinhonha"}, {"id": 81, "nome": "Pot\u00e9", "lat": -17.4333, "lng": -41.6167, "regiao": "Vale do Jequitinhonha"}, {"id": 82, "nome": "Catuji", "lat": -17.5667, "lng": -41.5667, "regiao": "Vale do Jequitinhonha"}, {"id": 83, "nome": "Nanuque", "lat": -17.8364, "lng": -40.3333, "regiao": "Litoral"}, {"id": 84, "nome": "Novo Oriente de Minas", "lat": -17.4167, "lng": -41.7667, "regiao": "Vale do Jequitinhonha"}, {"id": 85, "nome": "Ladainha", "lat": -17.7333, "lng": -41.8667, "regiao": "Vale do Jequitinhonha"}, {"id": 86, "nome": "Frei Gaspar", "lat": -17.35, "lng": -41.85, "regiao": "Vale do Jequitinhonha"}, {"id": 87, "nome": "Arapua", "lat": -17.2, "lng": -41.95, "regiao": "Vale do Jequitinhonha"}, {"id": 88, "nome": "Franciscopolis", "lat": -16.5, "lng": -41.5, "regiao": "Vale do Jequitinhonha"}, {"id": 89, "nome": "Medina", "lat": -17.3167, "lng": -41.3167, "regiao": "Vale do Jequitinhonha"}]}
+{
+  "cidades": [
+    {
+      "id": 1,
+      "nome": "Montes Claros",
+      "microrregiao": "Montes Claros",
+      "lat": -16.7289,
+      "lng": -43.8493,
+      "tipo": "hub_principal"
+    },
+    {
+      "id": 2,
+      "nome": "Brasília de Minas",
+      "microrregiao": "Montes Claros",
+      "lat": -15.9833,
+      "lng": -43.8333,
+      "tipo": "city"
+    },
+    {
+      "id": 3,
+      "nome": "Campo Azul",
+      "microrregiao": "Montes Claros",
+      "lat": -16.1833,
+      "lng": -43.7833,
+      "tipo": "city"
+    },
+    {
+      "id": 4,
+      "nome": "Capitão Enéas",
+      "microrregiao": "Montes Claros",
+      "lat": -16.2833,
+      "lng": -43.6333,
+      "tipo": "city"
+    },
+    {
+      "id": 5,
+      "nome": "Claro dos Poções",
+      "microrregiao": "Montes Claros",
+      "lat": -16.3833,
+      "lng": -43.9333,
+      "tipo": "city"
+    },
+    {
+      "id": 6,
+      "nome": "Coração de Jesus",
+      "microrregiao": "Montes Claros",
+      "lat": -16.4167,
+      "lng": -43.7333,
+      "tipo": "city"
+    },
+    {
+      "id": 7,
+      "nome": "Francisco Sá",
+      "microrregiao": "Montes Claros",
+      "lat": -16.8833,
+      "lng": -43.0667,
+      "tipo": "city"
+    },
+    {
+      "id": 8,
+      "nome": "Glaucilândia",
+      "microrregiao": "Montes Claros",
+      "lat": -16.5333,
+      "lng": -43.4833,
+      "tipo": "city"
+    },
+    {
+      "id": 9,
+      "nome": "Ibiracatu",
+      "microrregiao": "Montes Claros",
+      "lat": -16.6333,
+      "lng": -43.6833,
+      "tipo": "city"
+    },
+    {
+      "id": 10,
+      "nome": "Japonvar",
+      "microrregiao": "Montes Claros",
+      "lat": -16.5167,
+      "lng": -43.8167,
+      "tipo": "city"
+    },
+    {
+      "id": 11,
+      "nome": "Juramento",
+      "microrregiao": "Montes Claros",
+      "lat": -16.2733,
+      "lng": -43.5906,
+      "tipo": "city"
+    },
+    {
+      "id": 12,
+      "nome": "Lontra",
+      "microrregiao": "Montes Claros",
+      "lat": -16.4667,
+      "lng": -43.4333,
+      "tipo": "city"
+    },
+    {
+      "id": 13,
+      "nome": "Luislândia",
+      "microrregiao": "Montes Claros",
+      "lat": -15.5347,
+      "lng": -44.2556,
+      "tipo": "city"
+    },
+    {
+      "id": 14,
+      "nome": "Mirabela",
+      "microrregiao": "Montes Claros",
+      "lat": -16.3103,
+      "lng": -43.6197,
+      "tipo": "city"
+    },
+    {
+      "id": 15,
+      "nome": "Patis",
+      "microrregiao": "Montes Claros",
+      "lat": -16.5397,
+      "lng": -43.5964,
+      "tipo": "city"
+    },
+    {
+      "id": 16,
+      "nome": "Ponto Chique",
+      "microrregiao": "Montes Claros",
+      "lat": -16.5833,
+      "lng": -43.3667,
+      "tipo": "city"
+    },
+    {
+      "id": 17,
+      "nome": "São João da Lagoa",
+      "microrregiao": "Montes Claros",
+      "lat": -17.0981,
+      "lng": -44.0422,
+      "tipo": "city"
+    },
+    {
+      "id": 18,
+      "nome": "São João da Ponte",
+      "microrregiao": "Montes Claros",
+      "lat": -17.0667,
+      "lng": -43.9333,
+      "tipo": "city"
+    },
+    {
+      "id": 19,
+      "nome": "São João do Pacuí",
+      "microrregiao": "Montes Claros",
+      "lat": -17.1167,
+      "lng": -44.1167,
+      "tipo": "city"
+    },
+    {
+      "id": 20,
+      "nome": "Ubaí",
+      "microrregiao": "Montes Claros",
+      "lat": -17.1333,
+      "lng": -43.9833,
+      "tipo": "city"
+    },
+    {
+      "id": 21,
+      "nome": "Varzelândia",
+      "microrregiao": "Montes Claros",
+      "lat": -15.8667,
+      "lng": -44.0833,
+      "tipo": "city"
+    },
+    {
+      "id": 22,
+      "nome": "Verdelândia",
+      "microrregiao": "Montes Claros",
+      "lat": -15.6931,
+      "lng": -44.3892,
+      "tipo": "city"
+    },
+    {
+      "id": 23,
+      "nome": "Januária",
+      "microrregiao": "Januária",
+      "lat": -15.4796,
+      "lng": -44.3662,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 24,
+      "nome": "Bonito de Minas",
+      "microrregiao": "Januária",
+      "lat": -15.3833,
+      "lng": -44.2167,
+      "tipo": "city"
+    },
+    {
+      "id": 25,
+      "nome": "Chapada Gaúcha",
+      "microrregiao": "Januária",
+      "lat": -15.2333,
+      "lng": -44.5667,
+      "tipo": "city"
+    },
+    {
+      "id": 26,
+      "nome": "Cônego Marinho",
+      "microrregiao": "Januária",
+      "lat": -15.5667,
+      "lng": -44.7333,
+      "tipo": "city"
+    },
+    {
+      "id": 27,
+      "nome": "Icaraí de Minas",
+      "microrregiao": "Januária",
+      "lat": -15.6167,
+      "lng": -44.3167,
+      "tipo": "city"
+    },
+    {
+      "id": 28,
+      "nome": "Itacarambi",
+      "microrregiao": "Januária",
+      "lat": -15.4167,
+      "lng": -44.2833,
+      "tipo": "city"
+    },
+    {
+      "id": 29,
+      "nome": "Juvenília",
+      "microrregiao": "Januária",
+      "lat": -15.3667,
+      "lng": -44.5,
+      "tipo": "city"
+    },
+    {
+      "id": 30,
+      "nome": "Manga",
+      "microrregiao": "Januária",
+      "lat": -15.4167,
+      "lng": -44.6667,
+      "tipo": "city"
+    },
+    {
+      "id": 31,
+      "nome": "Matias Cardoso",
+      "microrregiao": "Januária",
+      "lat": -15.2167,
+      "lng": -44.4,
+      "tipo": "city"
+    },
+    {
+      "id": 32,
+      "nome": "Miravânia",
+      "microrregiao": "Januária",
+      "lat": -15.3,
+      "lng": -44.5667,
+      "tipo": "city"
+    },
+    {
+      "id": 33,
+      "nome": "Montalvânia",
+      "microrregiao": "Januária",
+      "lat": -15.6333,
+      "lng": -44.8167,
+      "tipo": "city"
+    },
+    {
+      "id": 34,
+      "nome": "Pedras de Maria da Cruz",
+      "microrregiao": "Januária",
+      "lat": -15.5833,
+      "lng": -44.5667,
+      "tipo": "city"
+    },
+    {
+      "id": 35,
+      "nome": "Pintópolis",
+      "microrregiao": "Januária",
+      "lat": -15.3833,
+      "lng": -44.3167,
+      "tipo": "city"
+    },
+    {
+      "id": 36,
+      "nome": "São Francisco",
+      "microrregiao": "Januária",
+      "lat": -15.8094,
+      "lng": -44.2794,
+      "tipo": "city"
+    },
+    {
+      "id": 37,
+      "nome": "São João das Missões",
+      "microrregiao": "Januária",
+      "lat": -15.3667,
+      "lng": -44.7167,
+      "tipo": "city"
+    },
+    {
+      "id": 38,
+      "nome": "Urucuia",
+      "microrregiao": "Januária",
+      "lat": -15.5,
+      "lng": -44.8333,
+      "tipo": "city"
+    },
+    {
+      "id": 39,
+      "nome": "Salinas",
+      "microrregiao": "Salinas",
+      "lat": -16.1658,
+      "lng": -42.2842,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 40,
+      "nome": "Águas Vermelhas",
+      "microrregiao": "Salinas",
+      "lat": -16.2833,
+      "lng": -41.9333,
+      "tipo": "city"
+    },
+    {
+      "id": 41,
+      "nome": "Berizal",
+      "microrregiao": "Salinas",
+      "lat": -16.4,
+      "lng": -42.2167,
+      "tipo": "city"
+    },
+    {
+      "id": 42,
+      "nome": "Curral de Dentro",
+      "microrregiao": "Salinas",
+      "lat": -16.35,
+      "lng": -42.15,
+      "tipo": "city"
+    },
+    {
+      "id": 43,
+      "nome": "Divisa Alegre",
+      "microrregiao": "Salinas",
+      "lat": -16.3167,
+      "lng": -42.1333,
+      "tipo": "city"
+    },
+    {
+      "id": 44,
+      "nome": "Fruta de Leite",
+      "microrregiao": "Salinas",
+      "lat": -16.0842,
+      "lng": -43.1564,
+      "tipo": "city"
+    },
+    {
+      "id": 45,
+      "nome": "Indaiabira",
+      "microrregiao": "Salinas",
+      "lat": -16.3333,
+      "lng": -42.3333,
+      "tipo": "city"
+    },
+    {
+      "id": 46,
+      "nome": "Montezuma",
+      "microrregiao": "Salinas",
+      "lat": -16.4167,
+      "lng": -42.1667,
+      "tipo": "city"
+    },
+    {
+      "id": 47,
+      "nome": "Ninheira",
+      "microrregiao": "Salinas",
+      "lat": -16.0831,
+      "lng": -43.3914,
+      "tipo": "city"
+    },
+    {
+      "id": 48,
+      "nome": "Novorizonte",
+      "microrregiao": "Salinas",
+      "lat": -16.3667,
+      "lng": -42.2,
+      "tipo": "city"
+    },
+    {
+      "id": 49,
+      "nome": "Rio Pardo de Minas",
+      "microrregiao": "Salinas",
+      "lat": -16.3,
+      "lng": -42.15,
+      "tipo": "city"
+    },
+    {
+      "id": 50,
+      "nome": "Rubelita",
+      "microrregiao": "Salinas",
+      "lat": -16.4333,
+      "lng": -42.2667,
+      "tipo": "city"
+    },
+    {
+      "id": 51,
+      "nome": "Santa Cruz de Salinas",
+      "microrregiao": "Salinas",
+      "lat": -16.4106,
+      "lng": -42.4361,
+      "tipo": "city"
+    },
+    {
+      "id": 52,
+      "nome": "Santo Antônio do Retiro",
+      "microrregiao": "Salinas",
+      "lat": -16.8131,
+      "lng": -43.4153,
+      "tipo": "city"
+    },
+    {
+      "id": 53,
+      "nome": "São João do Paraíso",
+      "microrregiao": "Salinas",
+      "lat": -16.4,
+      "lng": -42.25,
+      "tipo": "city"
+    },
+    {
+      "id": 54,
+      "nome": "Taiobeiras",
+      "microrregiao": "Salinas",
+      "lat": -16.2042,
+      "lng": -42.4653,
+      "tipo": "city"
+    },
+    {
+      "id": 55,
+      "nome": "Vargem Grande do Rio Pardo",
+      "microrregiao": "Salinas",
+      "lat": -16.35,
+      "lng": -42.25,
+      "tipo": "city"
+    },
+    {
+      "id": 56,
+      "nome": "Janaúba",
+      "microrregiao": "Janaúba",
+      "lat": -15.8008,
+      "lng": -43.3106,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 57,
+      "nome": "Catuti",
+      "microrregiao": "Janaúba",
+      "lat": -15.6667,
+      "lng": -43.3,
+      "tipo": "city"
+    },
+    {
+      "id": 58,
+      "nome": "Espinosa",
+      "microrregiao": "Janaúba",
+      "lat": -15.0553,
+      "lng": -43.8328,
+      "tipo": "city"
+    },
+    {
+      "id": 59,
+      "nome": "Gameleiras",
+      "microrregiao": "Janaúba",
+      "lat": -15.7333,
+      "lng": -43.4,
+      "tipo": "city"
+    },
+    {
+      "id": 60,
+      "nome": "Jaíba",
+      "microrregiao": "Janaúba",
+      "lat": -15.7667,
+      "lng": -43.75,
+      "tipo": "city"
+    },
+    {
+      "id": 61,
+      "nome": "Mamonas",
+      "microrregiao": "Janaúba",
+      "lat": -19.1736,
+      "lng": -45.7697,
+      "tipo": "city"
+    },
+    {
+      "id": 62,
+      "nome": "Mato Verde",
+      "microrregiao": "Janaúba",
+      "lat": -15.4,
+      "lng": -43.5333,
+      "tipo": "city"
+    },
+    {
+      "id": 63,
+      "nome": "Monte Azul",
+      "microrregiao": "Janaúba",
+      "lat": -15.3667,
+      "lng": -43.6333,
+      "tipo": "city"
+    },
+    {
+      "id": 64,
+      "nome": "Nova Porteirinha",
+      "microrregiao": "Janaúba",
+      "lat": -16.0667,
+      "lng": -43.65,
+      "tipo": "city"
+    },
+    {
+      "id": 65,
+      "nome": "Pai Pedro",
+      "microrregiao": "Janaúba",
+      "lat": -16.5275,
+      "lng": -43.4275,
+      "tipo": "city"
+    },
+    {
+      "id": 66,
+      "nome": "Porteirinha",
+      "microrregiao": "Janaúba",
+      "lat": -16.0328,
+      "lng": -43.6733,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 67,
+      "nome": "Riacho dos Machados",
+      "microrregiao": "Janaúba",
+      "lat": -16.7631,
+      "lng": -43.3186,
+      "tipo": "city"
+    },
+    {
+      "id": 68,
+      "nome": "Serranópolis de Minas",
+      "microrregiao": "Janaúba",
+      "lat": -16.0,
+      "lng": -43.7,
+      "tipo": "city"
+    },
+    {
+      "id": 69,
+      "nome": "Pirapora",
+      "microrregiao": "Pirapora",
+      "lat": -17.3504,
+      "lng": -44.9436,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 70,
+      "nome": "Buritizeiro",
+      "microrregiao": "Pirapora",
+      "lat": -17.3667,
+      "lng": -45.1667,
+      "tipo": "city"
+    },
+    {
+      "id": 71,
+      "nome": "Ibiaí",
+      "microrregiao": "Pirapora",
+      "lat": -17.3569,
+      "lng": -44.6447,
+      "tipo": "city"
+    },
+    {
+      "id": 72,
+      "nome": "Jequitaí",
+      "microrregiao": "Pirapora",
+      "lat": -17.2833,
+      "lng": -45.4167,
+      "tipo": "city"
+    },
+    {
+      "id": 73,
+      "nome": "Lagoa dos Patos",
+      "microrregiao": "Pirapora",
+      "lat": -17.5,
+      "lng": -45.2833,
+      "tipo": "city"
+    },
+    {
+      "id": 74,
+      "nome": "Lassance",
+      "microrregiao": "Pirapora",
+      "lat": -17.8333,
+      "lng": -45.1833,
+      "tipo": "city"
+    },
+    {
+      "id": 75,
+      "nome": "Riachinho",
+      "microrregiao": "Pirapora",
+      "lat": -17.25,
+      "lng": -45.0833,
+      "tipo": "city"
+    },
+    {
+      "id": 76,
+      "nome": "Santa Fé de Minas",
+      "microrregiao": "Pirapora",
+      "lat": -17.6167,
+      "lng": -45.25,
+      "tipo": "city"
+    },
+    {
+      "id": 77,
+      "nome": "São Romão",
+      "microrregiao": "Pirapora",
+      "lat": -17.5833,
+      "lng": -45.3333,
+      "tipo": "city"
+    },
+    {
+      "id": 78,
+      "nome": "Várzea da Palma",
+      "microrregiao": "Pirapora",
+      "lat": -17.2922,
+      "lng": -44.7406,
+      "tipo": "city"
+    },
+    {
+      "id": 79,
+      "nome": "Grão Mogol",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.3625,
+      "lng": -42.8803,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 80,
+      "nome": "Botumirim",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.5,
+      "lng": -42.75,
+      "tipo": "city"
+    },
+    {
+      "id": 81,
+      "nome": "Cristália",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.4667,
+      "lng": -42.6833,
+      "tipo": "city"
+    },
+    {
+      "id": 82,
+      "nome": "Itacambira",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.3092,
+      "lng": -42.6117,
+      "tipo": "city"
+    },
+    {
+      "id": 83,
+      "nome": "Josenópolis",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.4333,
+      "lng": -42.75,
+      "tipo": "city"
+    },
+    {
+      "id": 84,
+      "nome": "Padre Carvalho",
+      "microrregiao": "Grão Mogol",
+      "lat": -16.55,
+      "lng": -42.85,
+      "tipo": "city"
+    },
+    {
+      "id": 85,
+      "nome": "Bocaiúva",
+      "microrregiao": "Bocaiúva",
+      "lat": -17.1019,
+      "lng": -43.8153,
+      "tipo": "sub_hub"
+    },
+    {
+      "id": 86,
+      "nome": "Engenheiro Navarro",
+      "microrregiao": "Bocaiúva",
+      "lat": -16.6969,
+      "lng": -43.0803,
+      "tipo": "city"
+    },
+    {
+      "id": 87,
+      "nome": "Francisco Dumont",
+      "microrregiao": "Bocaiúva",
+      "lat": -17.2,
+      "lng": -43.9167,
+      "tipo": "city"
+    },
+    {
+      "id": 88,
+      "nome": "Guaraciama",
+      "microrregiao": "Bocaiúva",
+      "lat": -17.0667,
+      "lng": -43.7333,
+      "tipo": "city"
+    },
+    {
+      "id": 89,
+      "nome": "Olhos-d'Água",
+      "microrregiao": "Bocaiúva",
+      "lat": -16.9833,
+      "lng": -43.85,
+      "tipo": "city"
+    }
+  ]
+}

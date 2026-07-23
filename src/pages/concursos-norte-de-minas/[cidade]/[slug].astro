@@ -1,0 +1,52 @@
+---
+export async function getStaticPaths() {
+  const editais = [
+    { cidade: "montes-claros", slug: "prefeitura-2025" },
+    { cidade: "montes-claros", slug: "camara-2025" },
+    { cidade: "januaria", slug: "prefeitura-2025" },
+    { cidade: "salinas", slug: "prefeitura-2025" },
+  ];
+  return editais.map((e) => ({ params: { cidade: e.cidade, slug: e.slug } }));
+}
+
+const { cidade, slug } = Astro.params;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Concurso {slug} em {cidade}</title>
+  <style>
+    body { font-family: system-ui; background: #1a1a1a; color: #e0e0e0; margin: 0; padding: 2rem; max-width: 800px; }
+    h1 { color: #D2691E; }
+    .resumo { background: #2a2a2a; border-left: 4px solid #D2691E; padding: 1.5rem; border-radius: 6px; margin: 2rem 0; }
+    .resumo ul { list-style: none; padding: 0; }
+    .resumo li { padding: 0.5rem 0; border-bottom: 1px solid #333; }
+    a { color: #D2691E; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <a href={`/concursos-norte-de-minas/${cidade}`}>← Voltar para {cidade}</a>
+  
+  <h1>Concurso em {cidade} - {slug}</h1>
+  
+  <div class="resumo">
+    <h3>📋 Resumo do Concurso</h3>
+    <ul>
+      <li><strong>Banca:</strong> COTEC</li>
+      <li><strong>Total de Vagas:</strong> 50</li>
+      <li><strong>Salário Máximo:</strong> R$ 5.500,00</li>
+      <li><strong>Período de Inscrição:</strong> 01/03/2025 a 30/03/2025</li>
+      <li><strong>Data da Prova:</strong> 15/04/2025</li>
+    </ul>
+    <button style="background: #D2691E; color: white; padding: 0.75rem 1.5rem; border: none; border-radius: 4px; cursor: pointer; margin-top: 1rem;">📥 Baixar Edital em PDF</button>
+  </div>
+
+  <h2>Conteúdo do Edital</h2>
+  <p>Aqui irá o conteúdo gerado pelo Claude API...</p>
+
+  <h2>❓ Perguntas Frequentes</h2>
+  <p>Seção de FAQ será renderizada aqui...</p>
+</body>
+</html>

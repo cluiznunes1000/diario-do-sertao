@@ -1,0 +1,40 @@
+---
+export async function getStaticPaths() {
+  const cidades = [
+    "montes-claros",
+    "januaria",
+    "salinas",
+    "janauba",
+    "pirapora",
+    "grao-mogol",
+  ];
+  return cidades.map((cidade) => ({ params: { cidade } }));
+}
+const { cidade } = Astro.params;
+---
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Concursos em {cidade}</title>
+  <style>
+    body { font-family: system-ui; background: #1a1a1a; color: #e0e0e0; margin: 0; padding: 2rem; }
+    h1 { color: #D2691E; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; }
+    .card { background: #2a2a2a; border: 1px solid #333; padding: 1.5rem; border-radius: 8px; }
+    a { color: #D2691E; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <a href="/concursos-norte-de-minas">← Voltar</a>
+  <h1>Concursos em {cidade}</h1>
+  <p>Editais para {cidade}</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Edital 1</h3>
+      <a href={`/concursos-norte-de-minas/${cidade}/edital-1`}>Ver →</a>
+    </div>
+  </div>
+</body>
+</html>

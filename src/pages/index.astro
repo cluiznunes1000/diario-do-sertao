@@ -1,60 +1,61 @@
 ---
-import BaseLayout from "../layouts/BaseLayout.astro";
-
 const cidadesJson = await import("../data/cidades.json");
 const cidades = cidadesJson.default.cidades;
+
+const montesclaros = cidades.find(c => c.nome === "Montes Claros");
 ---
 
-<BaseLayout title="Diário do Sertão - Portal de Notícias">
-  <h2>Bem-vindo ao Diário do Sertão</h2>
-  <p>Selecione uma cidade para ver as notícias:</p>
-  
-  <div class="cidades-grid">
-    {cidades.map((cidade) => (
-      <a href={`/${cidade.id}`} class="cidade-card">
-        <h3>{cidade.nome}</h3>
-        <p>{cidade.regiao}</p>
-      </a>
-    ))}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Diário do Sertão</title>
+  <style>
+    body {
+      font-family: system-ui;
+      background: #1a1a1a;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 2rem;
+    }
+    header {
+      background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    h1 { margin: 0; font-size: 2.5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #2a2a2a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      border: 1px solid #333;
+    }
+    .card h3 { color: #D2691E; margin: 0 0 0.5rem 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🗞️ Diário do Sertão</h1>
+    <p>As histórias de 89 cidades</p>
+  </header>
+
+  <h2>Hub Principal</h2>
+  <div class="card">
+    <h3>{montesclaros.nome}</h3>
+    <p>22 municípios</p>
   </div>
-</BaseLayout>
 
-<style>
-  h2 {
-    font-size: 2rem;
-    margin-top: 0;
-  }
-
-  .cidades-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-
-  .cidade-card {
-    background: white;
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-decoration: none;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .cidade-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-
-  .cidade-card h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.25rem;
-  }
-
-  .cidade-card p {
-    margin: 0;
-    font-size: 0.875rem;
-    color: #666;
-  }
-</style>
+  <h2>Microrregiões</h2>
+  <p>Total de cidades: {cidades.length}</p>
+</body>
+</html>
