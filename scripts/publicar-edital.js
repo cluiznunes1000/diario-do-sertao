@@ -8,17 +8,20 @@ const client = new Anthropic({
 });
 
 async function publicarEdital(cidade, banca, dadosEdital) {
-  const MEGA_PROMPT = `Atue como Especialista em SEO focado em concursos públicos.
+  const MEGA_PROMPT = `Você é um especialista em SEO para concursos públicos.
 
-Processe estes dados do edital:
-${dadosEdital}
+IMPORTANTE: Retorne APENAS HTML puro com tags <h1>, <h2>, <p>, <ul>, <li>. 
+NÃO use Markdown (#, ##, **, etc).
 
-Gere EXATAMENTE neste formato:
-CATEGORIA: [MUNICIPAL/ESTADUAL-MG/NACIONAL]
-CIDADE: ${cidade}
-BANCA: ${banca}
+Processe: ${dadosEdital}
 
-Depois o conteúdo HTML e JSON-LD`;
+Formato:
+1. CATEGORIA: [MUNICIPAL/ESTADUAL-MG/NACIONAL]
+2. CIDADE: ${cidade}
+3. BANCA: ${banca}
+4. HTML estruturado
+5. FAQ em HTML
+6. JSON-LD`;
 
   try {
     console.log("🔄 Chamando Claude API...");
@@ -28,33 +31,30 @@ Depois o conteúdo HTML e JSON-LD`;
       messages: [{ role: "user", content: MEGA_PROMPT }],
     });
 
-    const conteudo = response.content[0].text;
+    const conteudoGerado = response.content[0].text;
     
-    // Extrair CATEGORIA da primeira linha
-    const primeiraLinha = conteudo.split('\n')[0];
-    const categoria = primeiraLinha.includes('MUNICIPAL') ? 'MUNICIPAL' : 
-                      primeiraLinha.includes('ESTADUAL') ? 'ESTADUAL' : 'NACIONAL';
+    // Envolver em frontmatter Astro
+    const conteudo = `---
+// Auto-gerado por Claude API
+---
 
-    // Criar caminho do arquivo
+${conteudoGerado}`;
+    
     const slug = banca.toLowerCase().replace(/\s+/g, '-');
     const ano = new Date().getFullYear();
-    const arquivoNome = `${slug}-${ano}.astro`;
-    const caminho = `~/diario-do-sertao/src/pages/concursos-norte-de-minas/${cidade.toLowerCase()}/${arquivoNome}`;
-    const caminhoCompleto = caminho.replace('~', process.env.HOME);
+    const arquivoNome = \`\${slug}-\${ano}.astro\`;
+    const caminhoCompleto = path.join(process.env.HOME, 'diario-do-sertao/src/pages/concursos-norte-de-minas', cidade, arquivoNome);
 
-    // Criar diretório se não existir
     const dir = path.dirname(caminhoCompleto);
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });
     }
 
-    // Salvar arquivo
     fs.writeFileSync(caminhoCompleto, conteudo);
-    console.log(`✅ Arquivo salvo: ${caminhoCompleto}`);
+    console.log(\`✅ Arquivo salvo: \${caminhoCompleto}\`);
 
-    // Git commit e push
     console.log("📤 Fazendo commit e push...");
-    execSync(`cd ~/diario-do-sertao && git add . && git commit -m "Adicionar edital: ${banca} em ${cidade}" && git push origin main`, { stdio: 'inherit' });
+    execSync(\`cd ~/diario-do-sertao && git add . && git commit -m "Adicionar edital: \${banca} em \${cidade}" && git push origin main\`, { stdio: 'inherit' });
     
     console.log("🎉 Publicado com sucesso!");
 
@@ -63,7 +63,6 @@ Depois o conteúdo HTML e JSON-LD`;
   }
 }
 
-// Exemplo de uso
 const cidade = "montes-claros";
 const banca = "COTEC";
 const dados = "Prefeitura de Montes Claros - Edital 001/2025, Vagas: 50, Salário: R$ 5.500, Inscrições: 01/03 a 30/03/2025, Prova: 15/04/2025";
