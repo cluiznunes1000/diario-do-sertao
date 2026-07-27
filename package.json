@@ -13,6 +13,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.114.0",
     "astro": "^7.1.1"
   },
   "devDependencies": {
