@@ -6,6 +6,11 @@ import { execSync } from 'child_process';
 const app = express();
 app.use(express.json());
 
+// Função para remover acentos
+function removerAcentos(str) {
+  return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
 app.post('/api/salvar-edital', (req, res) => {
   try {
     const { cidade, banca, html, jsonld } = req.body;
@@ -14,7 +19,8 @@ app.post('/api/salvar-edital', (req, res) => {
       return res.status(400).json({ error: 'Faltam dados' });
     }
 
-    const slug = banca.toLowerCase().replace(/\s+/g, '-');
+    // Remover acentos do slug
+    const slug = removerAcentos(banca).toLowerCase().replace(/\s+/g, '-');
     const ano = new Date().getFullYear();
     const arquivoNome = `${slug}-${ano}.astro`;
     const caminhoCompleto = path.join(process.env.HOME, 'diario-do-sertao/src/pages/concursos-norte-de-minas', cidade, arquivoNome);
