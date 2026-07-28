@@ -1,0 +1,43 @@
+{
+  "name": "Processar Edital Automático",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "979ca57c-e8c9-4238-92f3-93cc99e434fa"
+      },
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [100, 100]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://localhost:3001/api/salvar-edital",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "cidade", "value": "={{$node.Webhook.json.cidade}}"},
+            {"name": "banca", "value": "={{$node.Webhook.json.banca}}"},
+            {"name": "html", "value": "={{$node.\"Processar Edital – HTML SEO + JSON-LD\".json.html}}"},
+            {"name": "jsonld", "value": "={{$node.\"Processar Edital – HTML SEO + JSON-LD\".json.jsonld}}"}
+          ]
+        }
+      },
+      "name": "Salvar no Servidor Local",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [600, 100]
+    }
+  ],
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {"node": "Salvar no Servidor Local", "type": "main", "index": 0}
+        ]
+      ]
+    }
+  }
+}
